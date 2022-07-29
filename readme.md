@@ -7,7 +7,7 @@
 
 ![](https://img.shields.io/badge/Rishu%20srivastava-BCA-orange)
 
-# **Project-10**
+# **Project-10** [Live Link](https://ineuronproject-10.netlify.app/)
 >- Skills gained in this project
  >- I learned about how to use poisition in css [Relative and absolute]
  >- learnd about transform property
