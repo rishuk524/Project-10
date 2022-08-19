@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scale=none">
     <title>Buisness |landing page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
@@ -13,7 +13,6 @@
     <div class="logo">
         <img src="./images/Logo.png" alt="">
     </div>
-    <nav>
         <nav class="list">
             <ul>
                 <li class="list-item">About us</li>
@@ -26,7 +25,9 @@
                     <h2>Call us <br>+38(097)6545434</h2>
                 </li>
             </ul>
-        </nav>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>  
     </nav>
        <div class="horizontalline">
         <hr>
@@ -54,5 +55,30 @@
             </span>
         </div>
        </div>
+       <section class="mob-nav" id="mobNav">
+        <ul class="mob-list">
+          <li>About us</li>
+          <li>Benifit</li>
+          <li>Projects</li>
+          <li>Stages</li>
+          <li>Services</li>
+        </ul>
+      </section>
+       <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobNav = document.getElementById("mobNav")
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+          if(!menuOpen) {
+            menuBtn.classList.add('open');
+            mobNav.classList.add("remove")
+            menuOpen = true;
+          } else {
+            menuBtn.classList.remove('open');
+            mobNav.classList.remove("remove")
+            menuOpen = false;
+          }
+        });
+        </script>
 </body>
 </html>
